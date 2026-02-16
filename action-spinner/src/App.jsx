@@ -153,20 +153,13 @@ export default function ActionSpinner() {
 
                         {/* Spinning Frog in Center */}
                         <div
-                            className="absolute top-1/2 left-1/2 pointer-events-none"
+                            className="absolute top-1/2 left-1/2 pointer-events-none text-6xl"
                             style={{
                                 transform: `translate(-50%, -50%) rotate(${frogRotation}deg)`,
                                 transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
                             }}
                         >
-                            <div
-                                className="text-6xl"
-                                style={{
-                                    transform: 'translateY(-120px)',
-                                }}
-                            >
-                                🐸
-                            </div>
+                            🐸
                         </div>
                     </div>
                 </div>
