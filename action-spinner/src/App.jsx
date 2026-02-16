@@ -12,7 +12,7 @@ export default function ActionSpinner() {
     ]);
     const [newAction, setNewAction] = useState('');
     const [isSpinning, setIsSpinning] = useState(false);
-    const [frogRotation, setFrogRotation] = useState(0);
+    const [rotation, setRotation] = useState(0);
     const [selectedIndex, setSelectedIndex] = useState(null);
     const animationRef = useRef(null);
 
@@ -44,14 +44,14 @@ export default function ActionSpinner() {
         // Random selection
         const targetIndex = Math.floor(Math.random() * actions.length);
 
-        // Calculate target rotation for frog
+        // Calculate target rotation
         const degreesPerSegment = 360 / actions.length;
         const baseRotations = 5; // Number of full spins
         const targetDegree = targetIndex * degreesPerSegment;
-        const totalRotation = (baseRotations * 360) + targetDegree;
+        const totalRotation = (baseRotations * 360) + (360 - targetDegree) + (degreesPerSegment / 2);
 
-        const startRotation = frogRotation % 360;
-        const finalRotation = frogRotation + totalRotation;
+        const startRotation = rotation % 360;
+        const finalRotation = rotation + totalRotation;
 
         // Animate
         const duration = 4000; // 4 seconds
@@ -65,7 +65,7 @@ export default function ActionSpinner() {
             const eased = 1 - Math.pow(1 - progress, 3);
 
             const currentRotation = startRotation + (totalRotation * eased);
-            setFrogRotation(currentRotation);
+            setRotation(currentRotation);
 
             if (progress < 1) {
                 animationRef.current = requestAnimationFrame(animate);
@@ -95,13 +95,17 @@ export default function ActionSpinner() {
 
                 {/* Spinner Container */}
                 <div className="relative flex justify-center items-center mb-12">
-                    <div className="relative w-[400px] h-[400px]">
-                        {/* Stationary Wheel */}
+                    <div className="relative w-[400px] h-[400px]" style={{ position: 'relative' }}>
+                        {/* Spinning Wheel */}
                         <svg
                             width="400"
                             height="400"
                             viewBox="0 0 400 400"
                             className="absolute top-0 left-0"
+                            style={{
+                                transform: `rotate(${rotation}deg)`,
+                                transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
+                            }}
                         >
                             {actions.map((action, index) => {
                                 const angle = (360 / actions.length) * index;
@@ -146,20 +150,33 @@ export default function ActionSpinner() {
                                         </text>
                                     </g>
                                 );
-                            })}
+                            })}z
                             {/* Center circle */}
-                            <circle cx="200" cy="200" r="30" fill="white" stroke="#333" strokeWidth="3" />
+                            <circle cx="200" cy="200" r="40" fill="white" stroke="#333" strokeWidth="3" />
                         </svg>
 
-                        {/* Spinning Frog in Center */}
+                        {/* Stationary Frog in Center */}
                         <div
-                            className="absolute top-1/2 left-1/2 pointer-events-none text-6xl"
+                            className="absolute pointer-events-none text-6xl"
                             style={{
-                                transform: `translate(-50%, -50%) rotate(${frogRotation}deg)`,
-                                transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%)',
+                                zIndex: 10
                             }}
                         >
                             🐸
+                        </div>
+
+                        {/* Stationary Pointer at Top */}
+                        <div
+                            className="absolute top-0 left-1/2 pointer-events-none"
+                            style={{
+                                transform: 'translateX(-50%)'
+                            }}
+                        >
+                            <div className="w-0 h-0 border-l-[20px] border-r-[20px] border-t-[40px] border-l-transparent border-r-transparent border-t-red-600"></div>
                         </div>
                     </div>
                 </div>
