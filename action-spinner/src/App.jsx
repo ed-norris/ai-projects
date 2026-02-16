@@ -88,7 +88,7 @@ export default function ActionSpinner() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-300 to-blue-300 p-8">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto px-4">
                 <h1 className="text-4xl font-bold text-white text-center mb-8 drop-shadow-lg">
                     🎯 Action Spinner
                 </h1>
@@ -154,9 +154,20 @@ export default function ActionSpinner() {
                             <circle cx="200" cy="200" r="30" fill="white" stroke="#333" strokeWidth="3" />
                         </svg>
 
-                        {/* Frog Pointer */}
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-8">
-                            <div className="text-6xl animate-bounce" style={{ animationDuration: '2s' }}>
+                        {/* Frog Pointer - now spinning with wheel, positioned at top */}
+                        <div
+                            className="absolute top-1/2 left-1/2 pointer-events-none"
+                            style={{
+                                transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
+                                transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
+                            }}
+                        >
+                            <div
+                                className="text-6xl"
+                                style={{
+                                    transform: 'translateY(-200px)',
+                                }}
+                            >
                                 🐸
                             </div>
                         </div>
@@ -215,11 +226,11 @@ export default function ActionSpinner() {
                                 className="flex items-center justify-between p-3 rounded-lg"
                                 style={{ backgroundColor: colors[index % colors.length] + '20' }}
                             >
-                                <span className="font-medium text-gray-800">{action}</span>
+                                <span className="font-medium text-gray-800 flex-1">{action}</span>
                                 <button
                                     onClick={() => deleteAction(index)}
                                     disabled={actions.length <= 2}
-                                    className="text-red-500 hover:text-red-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                                    className="text-red-500 hover:text-red-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors flex-shrink-0 ml-2"
                                     title={actions.length <= 2 ? "Need at least 2 actions" : "Delete action"}
                                 >
                                     <Trash2 size={20} />
