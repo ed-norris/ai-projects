@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Trash2, Plus } from 'lucide-react';
+import './ActionSpinner.css';
 
 export default function ActionSpinner() {
     const [actions, setActions] = useState([
@@ -87,21 +88,21 @@ export default function ActionSpinner() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-300 to-blue-300 p-8">
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold text-white text-center mb-8 drop-shadow-lg">
+        <div className="app-container">
+            <div className="content-wrapper">
+                <h1 className="title">
                     🎯 Action Spinner
                 </h1>
 
                 {/* Spinner Container */}
-                <div className="relative flex justify-center items-center mb-12">
-                    <div className="relative w-[400px] h-[400px]" style={{ position: 'relative' }}>
+                <div className="spinner-container">
+                    <div className="wheel-wrapper">
                         {/* Spinning Wheel */}
                         <svg
                             width="400"
                             height="400"
                             viewBox="0 0 400 400"
-                            className="absolute top-0 left-0"
+                            className="wheel-svg"
                             style={{
                                 transform: `rotate(${rotation}deg)`,
                                 transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
@@ -150,94 +151,77 @@ export default function ActionSpinner() {
                                         </text>
                                     </g>
                                 );
-                            })}z
+                            })}
                             {/* Center circle */}
                             <circle cx="200" cy="200" r="40" fill="white" stroke="#333" strokeWidth="3" />
                         </svg>
 
                         {/* Stationary Frog in Center */}
-                        <div
-                            className="absolute pointer-events-none text-6xl"
-                            style={{
-                                position: 'absolute',
-                                top: '50%',
-                                left: '50%',
-                                transform: 'translate(-50%, -50%)',
-                                zIndex: 10
-                            }}
-                        >
+                        <div className="frog-center">
                             🐸
                         </div>
 
                         {/* Stationary Pointer at Top */}
-                        <div
-                            className="absolute top-0 left-1/2 pointer-events-none"
-                            style={{
-                                transform: 'translateX(-50%)'
-                            }}
-                        >
-                            <div className="w-0 h-0 border-l-[20px] border-r-[20px] border-t-[40px] border-l-transparent border-r-transparent border-t-red-600"></div>
+                        <div className="pointer-top">
+                            <div className="pointer-arrow"></div>
                         </div>
                     </div>
                 </div>
 
                 {/* Result Display */}
                 {selectedIndex !== null && (
-                    <div className="bg-white rounded-lg p-6 mb-8 shadow-2xl text-center">
-                        <h2 className="text-2xl font-bold text-gray-800 mb-2">Selected Action:</h2>
-                        <p className="text-3xl font-bold" style={{ color: colors[selectedIndex % colors.length] }}>
+                    <div className="result-display">
+                        <h2 className="result-title">Selected Action:</h2>
+                        <p className="result-action" style={{ color: colors[selectedIndex % colors.length] }}>
                             {actions[selectedIndex]}
                         </p>
                     </div>
                 )}
 
                 {/* Spin Button */}
-                <div className="text-center mb-8">
+                <div className="spin-button-container">
                     <button
                         onClick={spin}
                         disabled={isSpinning || actions.length === 0}
-                        className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                        className="spin-button"
                     >
                         {isSpinning ? '🌀 Spinning...' : '🎲 SPIN!'}
                     </button>
                 </div>
 
                 {/* Action Management */}
-                <div className="bg-white rounded-lg p-6 shadow-2xl">
-                    <h3 className="text-xl font-bold text-gray-800 mb-4">Manage Actions</h3>
+                <div className="action-management">
+                    <h3 className="management-title">Manage Actions</h3>
 
                     {/* Add Action */}
-                    <div className="flex gap-2 mb-4">
+                    <div className="add-action-container">
                         <input
                             type="text"
                             value={newAction}
                             onChange={(e) => setNewAction(e.target.value)}
                             onKeyPress={(e) => e.key === 'Enter' && addAction()}
                             placeholder="Add new action..."
-                            className="flex-1 px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+                            className="action-input"
                         />
-                        <button
-                            onClick={addAction}
-                            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
-                        >
+                        <button onClick={addAction} className="add-button">
                             <Plus size={20} />
                             Add
                         </button>
                     </div>
 
                     {/* Action List */}
-                    <div className="space-y-2">
+                    <div className="action-list">
                         {actions.map((action, index) => (
                             <div
                                 key={index}
-                                className="flex items-center gap-3 p-3 rounded-lg"
+                                className="action-item"
                                 style={{ backgroundColor: colors[index % colors.length] + '20' }}
                             >
-                                <span className="font-medium text-gray-800 flex-1 min-w-0">{action}</span>
+                                <span className="action-text">{action}</span>
                                 <button
                                     onClick={() => deleteAction(index)}
                                     disabled={actions.length <= 2}
-                                    className="text-red-500 hover:text-red-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors flex-shrink-0"
+                                    className="delete-button"
                                     title={actions.length <= 2 ? "Need at least 2 actions" : "Delete action"}
                                 >
                                     <Trash2 size={20} />
@@ -247,7 +231,7 @@ export default function ActionSpinner() {
                     </div>
 
                     {actions.length <= 2 && (
-                        <p className="text-sm text-gray-500 mt-4 text-center">
+                        <p className="info-text">
                             ℹ️ You need at least 2 actions to use the spinner
                         </p>
                     )}

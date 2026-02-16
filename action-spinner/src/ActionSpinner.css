@@ -1,0 +1,214 @@
+/* ActionSpinner.css */
+
+.app-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgb(192, 132, 252), rgb(249, 168, 212), rgb(147, 197, 253));
+    padding: 2rem;
+}
+
+.content-wrapper {
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.spinner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.wheel-wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.wheel-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frog-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 3.75rem;
+    z-index: 10;
+}
+
+.pointer-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.pointer-arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #dc2626;
+}
+
+.result-display {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    text-align: center;
+}
+
+.result-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(31, 41, 55);
+    margin-bottom: 0.5rem;
+}
+
+.result-action {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.spin-button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.spin-button {
+    background: linear-gradient(to right, rgb(74, 222, 128), rgb(59, 130, 246));
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    transform: scale(1);
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.spin-button:hover:not(:disabled) {
+    background: linear-gradient(to right, rgb(34, 197, 94), rgb(37, 99, 235));
+    transform: scale(1.05);
+}
+
+.spin-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: scale(1);
+}
+
+.action-management {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.management-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(31, 41, 55);
+    margin-bottom: 1rem;
+}
+
+.add-action-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.action-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(209, 213, 219);
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.action-input:focus {
+    border-color: rgb(59, 130, 246);
+}
+
+.add-button {
+    background-color: rgb(34, 197, 94);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: rgb(22, 163, 74);
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.action-text {
+    font-weight: 500;
+    color: rgb(31, 41, 55);
+    flex: 1;
+    min-width: 0;
+}
+
+.delete-button {
+    color: rgb(239, 68, 68);
+    transition: color 0.3s;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-button:hover:not(:disabled) {
+    color: rgb(185, 28, 28);
+}
+
+.delete-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.info-text {
+    font-size: 0.875rem;
+    color: rgb(107, 114, 128);
+    margin-top: 1rem;
+    text-align: center;
+}
