@@ -12,7 +12,7 @@ export default function ActionSpinner() {
     ]);
     const [newAction, setNewAction] = useState('');
     const [isSpinning, setIsSpinning] = useState(false);
-    const [rotation, setRotation] = useState(0);
+    const [frogRotation, setFrogRotation] = useState(0);
     const [selectedIndex, setSelectedIndex] = useState(null);
     const animationRef = useRef(null);
 
@@ -44,14 +44,14 @@ export default function ActionSpinner() {
         // Random selection
         const targetIndex = Math.floor(Math.random() * actions.length);
 
-        // Calculate target rotation
+        // Calculate target rotation for frog
         const degreesPerSegment = 360 / actions.length;
         const baseRotations = 5; // Number of full spins
         const targetDegree = targetIndex * degreesPerSegment;
-        const totalRotation = (baseRotations * 360) + (360 - targetDegree) + (degreesPerSegment / 2);
+        const totalRotation = (baseRotations * 360) + targetDegree;
 
-        const startRotation = rotation % 360;
-        const finalRotation = rotation + totalRotation;
+        const startRotation = frogRotation % 360;
+        const finalRotation = frogRotation + totalRotation;
 
         // Animate
         const duration = 4000; // 4 seconds
@@ -65,7 +65,7 @@ export default function ActionSpinner() {
             const eased = 1 - Math.pow(1 - progress, 3);
 
             const currentRotation = startRotation + (totalRotation * eased);
-            setRotation(currentRotation);
+            setFrogRotation(currentRotation);
 
             if (progress < 1) {
                 animationRef.current = requestAnimationFrame(animate);
@@ -88,23 +88,20 @@ export default function ActionSpinner() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-300 to-blue-300 p-8">
-            <div className="max-w-4xl mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold text-white text-center mb-8 drop-shadow-lg">
                     🎯 Action Spinner
                 </h1>
 
                 {/* Spinner Container */}
                 <div className="relative flex justify-center items-center mb-12">
-                    <div className="relative">
-                        {/* Wheel */}
+                    <div className="relative w-[400px] h-[400px]">
+                        {/* Stationary Wheel */}
                         <svg
                             width="400"
                             height="400"
                             viewBox="0 0 400 400"
-                            style={{
-                                transform: `rotate(${rotation}deg)`,
-                                transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
-                            }}
+                            className="absolute top-0 left-0"
                         >
                             {actions.map((action, index) => {
                                 const angle = (360 / actions.length) * index;
@@ -154,18 +151,18 @@ export default function ActionSpinner() {
                             <circle cx="200" cy="200" r="30" fill="white" stroke="#333" strokeWidth="3" />
                         </svg>
 
-                        {/* Frog Pointer - now spinning with wheel, positioned at top */}
+                        {/* Spinning Frog in Center */}
                         <div
                             className="absolute top-1/2 left-1/2 pointer-events-none"
                             style={{
-                                transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
+                                transform: `translate(-50%, -50%) rotate(${frogRotation}deg)`,
                                 transition: isSpinning ? 'none' : 'transform 0.3s ease-out'
                             }}
                         >
                             <div
                                 className="text-6xl"
                                 style={{
-                                    transform: 'translateY(-200px)',
+                                    transform: 'translateY(-120px)',
                                 }}
                             >
                                 🐸
@@ -223,14 +220,14 @@ export default function ActionSpinner() {
                         {actions.map((action, index) => (
                             <div
                                 key={index}
-                                className="flex items-center justify-between p-3 rounded-lg"
+                                className="flex items-center gap-3 p-3 rounded-lg"
                                 style={{ backgroundColor: colors[index % colors.length] + '20' }}
                             >
-                                <span className="font-medium text-gray-800 flex-1">{action}</span>
+                                <span className="font-medium text-gray-800 flex-1 min-w-0">{action}</span>
                                 <button
                                     onClick={() => deleteAction(index)}
                                     disabled={actions.length <= 2}
-                                    className="text-red-500 hover:text-red-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors flex-shrink-0 ml-2"
+                                    className="text-red-500 hover:text-red-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors flex-shrink-0"
                                     title={actions.length <= 2 ? "Need at least 2 actions" : "Delete action"}
                                 >
                                     <Trash2 size={20} />
