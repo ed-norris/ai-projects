@@ -1,0 +1,1047 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F650FBAC2F51FF620017F6C5 /* MetronomeWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F650FB8C2F51FF620017F6C5 /* MetronomeWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F650FBB92F51FFA30017F6C5 /* MetronomeCore in Frameworks */ = {isa = PBXBuildFile; productRef = F650FBB82F51FFA30017F6C5 /* MetronomeCore */; };
+		F650FC0B2F52035F0017F6C5 /* MetronomeCore in Frameworks */ = {isa = PBXBuildFile; productRef = F650FC0A2F52035F0017F6C5 /* MetronomeCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F650FB6C2F51FF370017F6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F650FB562F51FF360017F6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F650FB5D2F51FF360017F6C5;
+			remoteInfo = MetronomeAppHost;
+		};
+		F650FB762F51FF370017F6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F650FB562F51FF360017F6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F650FB5D2F51FF360017F6C5;
+			remoteInfo = MetronomeAppHost;
+		};
+		F650FB992F51FF620017F6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F650FB562F51FF360017F6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F650FB8B2F51FF620017F6C5;
+			remoteInfo = "MetronomeWatch Watch App";
+		};
+		F650FBA32F51FF620017F6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F650FB562F51FF360017F6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F650FB8B2F51FF620017F6C5;
+			remoteInfo = "MetronomeWatch Watch App";
+		};
+		F650FBAA2F51FF620017F6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F650FB562F51FF360017F6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F650FB8B2F51FF620017F6C5;
+			remoteInfo = "MetronomeWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F650FBB02F51FF620017F6C5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F650FBAC2F51FF620017F6C5 /* MetronomeWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F650FB5E2F51FF360017F6C5 /* MetronomeAppHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetronomeAppHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F650FB6B2F51FF370017F6C5 /* MetronomeAppHostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetronomeAppHostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F650FB752F51FF370017F6C5 /* MetronomeAppHostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetronomeAppHostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F650FB8C2F51FF620017F6C5 /* MetronomeWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MetronomeWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F650FB982F51FF620017F6C5 /* MetronomeWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MetronomeWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F650FBA22F51FF620017F6C5 /* MetronomeWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MetronomeWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F650FBC72F5200360017F6C5 /* Exceptions for "MetronomeAppHost" folder in "MetronomeWatch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shared/BeatFeedbackOutput.swift,
+				Shared/MetronomeConnectivity.swift,
+				Shared/MetronomeSyncing.swift,
+				Shared/MetronomeViewModel.swift,
+			);
+			target = F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */;
+		};
+		F650FC0C2F5205050017F6C5 /* Exceptions for "MetronomeWatch Watch App" folder in "MetronomeWatch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				watchOS/MetronomeWatchApp.swift,
+			);
+			target = F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F650FB602F51FF360017F6C5 /* MetronomeAppHost */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F650FBC72F5200360017F6C5 /* Exceptions for "MetronomeAppHost" folder in "MetronomeWatch Watch App" target */,
+			);
+			path = MetronomeAppHost;
+			sourceTree = "<group>";
+		};
+		F650FB6E2F51FF370017F6C5 /* MetronomeAppHostTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MetronomeAppHostTests;
+			sourceTree = "<group>";
+		};
+		F650FB782F51FF370017F6C5 /* MetronomeAppHostUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MetronomeAppHostUITests;
+			sourceTree = "<group>";
+		};
+		F650FB8D2F51FF620017F6C5 /* MetronomeWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F650FC0C2F5205050017F6C5 /* Exceptions for "MetronomeWatch Watch App" folder in "MetronomeWatch Watch App" target */,
+			);
+			path = "MetronomeWatch Watch App";
+			sourceTree = "<group>";
+		};
+		F650FB9B2F51FF620017F6C5 /* MetronomeWatch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MetronomeWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		F650FBA52F51FF620017F6C5 /* MetronomeWatch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MetronomeWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F650FB5B2F51FF360017F6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F650FC0B2F52035F0017F6C5 /* MetronomeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB682F51FF370017F6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB722F51FF370017F6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB892F51FF620017F6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F650FBB92F51FFA30017F6C5 /* MetronomeCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB952F51FF620017F6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB9F2F51FF620017F6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F650FB552F51FF360017F6C5 = {
+			isa = PBXGroup;
+			children = (
+				F650FB602F51FF360017F6C5 /* MetronomeAppHost */,
+				F650FB6E2F51FF370017F6C5 /* MetronomeAppHostTests */,
+				F650FB782F51FF370017F6C5 /* MetronomeAppHostUITests */,
+				F650FB8D2F51FF620017F6C5 /* MetronomeWatch Watch App */,
+				F650FB9B2F51FF620017F6C5 /* MetronomeWatch Watch AppTests */,
+				F650FBA52F51FF620017F6C5 /* MetronomeWatch Watch AppUITests */,
+				F650FC092F52035F0017F6C5 /* Frameworks */,
+				F650FB5F2F51FF360017F6C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F650FB5F2F51FF360017F6C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F650FB5E2F51FF360017F6C5 /* MetronomeAppHost.app */,
+				F650FB6B2F51FF370017F6C5 /* MetronomeAppHostTests.xctest */,
+				F650FB752F51FF370017F6C5 /* MetronomeAppHostUITests.xctest */,
+				F650FB8C2F51FF620017F6C5 /* MetronomeWatch Watch App.app */,
+				F650FB982F51FF620017F6C5 /* MetronomeWatch Watch AppTests.xctest */,
+				F650FBA22F51FF620017F6C5 /* MetronomeWatch Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F650FC092F52035F0017F6C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F650FB5D2F51FF360017F6C5 /* MetronomeAppHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F650FB7F2F51FF370017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeAppHost" */;
+			buildPhases = (
+				F650FB5A2F51FF360017F6C5 /* Sources */,
+				F650FB5B2F51FF360017F6C5 /* Frameworks */,
+				F650FB5C2F51FF360017F6C5 /* Resources */,
+				F650FBB02F51FF620017F6C5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F650FBAB2F51FF620017F6C5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F650FB602F51FF360017F6C5 /* MetronomeAppHost */,
+			);
+			name = MetronomeAppHost;
+			packageProductDependencies = (
+				F650FC0A2F52035F0017F6C5 /* MetronomeCore */,
+			);
+			productName = MetronomeAppHost;
+			productReference = F650FB5E2F51FF360017F6C5 /* MetronomeAppHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F650FB6A2F51FF370017F6C5 /* MetronomeAppHostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F650FB822F51FF370017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeAppHostTests" */;
+			buildPhases = (
+				F650FB672F51FF370017F6C5 /* Sources */,
+				F650FB682F51FF370017F6C5 /* Frameworks */,
+				F650FB692F51FF370017F6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F650FB6D2F51FF370017F6C5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F650FB6E2F51FF370017F6C5 /* MetronomeAppHostTests */,
+			);
+			name = MetronomeAppHostTests;
+			packageProductDependencies = (
+			);
+			productName = MetronomeAppHostTests;
+			productReference = F650FB6B2F51FF370017F6C5 /* MetronomeAppHostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F650FB742F51FF370017F6C5 /* MetronomeAppHostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F650FB852F51FF370017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeAppHostUITests" */;
+			buildPhases = (
+				F650FB712F51FF370017F6C5 /* Sources */,
+				F650FB722F51FF370017F6C5 /* Frameworks */,
+				F650FB732F51FF370017F6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F650FB772F51FF370017F6C5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F650FB782F51FF370017F6C5 /* MetronomeAppHostUITests */,
+			);
+			name = MetronomeAppHostUITests;
+			packageProductDependencies = (
+			);
+			productName = MetronomeAppHostUITests;
+			productReference = F650FB752F51FF370017F6C5 /* MetronomeAppHostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F650FBAD2F51FF620017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeWatch Watch App" */;
+			buildPhases = (
+				F650FB882F51FF620017F6C5 /* Sources */,
+				F650FB892F51FF620017F6C5 /* Frameworks */,
+				F650FB8A2F51FF620017F6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F650FB8D2F51FF620017F6C5 /* MetronomeWatch Watch App */,
+			);
+			name = "MetronomeWatch Watch App";
+			packageProductDependencies = (
+				F650FBB82F51FFA30017F6C5 /* MetronomeCore */,
+			);
+			productName = "MetronomeWatch Watch App";
+			productReference = F650FB8C2F51FF620017F6C5 /* MetronomeWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F650FB972F51FF620017F6C5 /* MetronomeWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F650FBB12F51FF620017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeWatch Watch AppTests" */;
+			buildPhases = (
+				F650FB942F51FF620017F6C5 /* Sources */,
+				F650FB952F51FF620017F6C5 /* Frameworks */,
+				F650FB962F51FF620017F6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F650FB9A2F51FF620017F6C5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F650FB9B2F51FF620017F6C5 /* MetronomeWatch Watch AppTests */,
+			);
+			name = "MetronomeWatch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "MetronomeWatch Watch AppTests";
+			productReference = F650FB982F51FF620017F6C5 /* MetronomeWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F650FBA12F51FF620017F6C5 /* MetronomeWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F650FBB42F51FF620017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeWatch Watch AppUITests" */;
+			buildPhases = (
+				F650FB9E2F51FF620017F6C5 /* Sources */,
+				F650FB9F2F51FF620017F6C5 /* Frameworks */,
+				F650FBA02F51FF620017F6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F650FBA42F51FF620017F6C5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F650FBA52F51FF620017F6C5 /* MetronomeWatch Watch AppUITests */,
+			);
+			name = "MetronomeWatch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "MetronomeWatch Watch AppUITests";
+			productReference = F650FBA22F51FF620017F6C5 /* MetronomeWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F650FB562F51FF360017F6C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					F650FB5D2F51FF360017F6C5 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					F650FB6A2F51FF370017F6C5 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = F650FB5D2F51FF360017F6C5;
+					};
+					F650FB742F51FF370017F6C5 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = F650FB5D2F51FF360017F6C5;
+					};
+					F650FB8B2F51FF620017F6C5 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					F650FB972F51FF620017F6C5 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = F650FB8B2F51FF620017F6C5;
+					};
+					F650FBA12F51FF620017F6C5 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = F650FB8B2F51FF620017F6C5;
+					};
+				};
+			};
+			buildConfigurationList = F650FB592F51FF360017F6C5 /* Build configuration list for PBXProject "MetronomeAppHost" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F650FB552F51FF360017F6C5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F650FBB72F51FFA30017F6C5 /* XCLocalSwiftPackageReference "../../metronome-app" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F650FB5F2F51FF360017F6C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F650FB5D2F51FF360017F6C5 /* MetronomeAppHost */,
+				F650FB6A2F51FF370017F6C5 /* MetronomeAppHostTests */,
+				F650FB742F51FF370017F6C5 /* MetronomeAppHostUITests */,
+				F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */,
+				F650FB972F51FF620017F6C5 /* MetronomeWatch Watch AppTests */,
+				F650FBA12F51FF620017F6C5 /* MetronomeWatch Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F650FB5C2F51FF360017F6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB692F51FF370017F6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB732F51FF370017F6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB8A2F51FF620017F6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB962F51FF620017F6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FBA02F51FF620017F6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F650FB5A2F51FF360017F6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB672F51FF370017F6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB712F51FF370017F6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB882F51FF620017F6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB942F51FF620017F6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F650FB9E2F51FF620017F6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F650FB6D2F51FF370017F6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F650FB5D2F51FF360017F6C5 /* MetronomeAppHost */;
+			targetProxy = F650FB6C2F51FF370017F6C5 /* PBXContainerItemProxy */;
+		};
+		F650FB772F51FF370017F6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F650FB5D2F51FF360017F6C5 /* MetronomeAppHost */;
+			targetProxy = F650FB762F51FF370017F6C5 /* PBXContainerItemProxy */;
+		};
+		F650FB9A2F51FF620017F6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */;
+			targetProxy = F650FB992F51FF620017F6C5 /* PBXContainerItemProxy */;
+		};
+		F650FBA42F51FF620017F6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */;
+			targetProxy = F650FBA32F51FF620017F6C5 /* PBXContainerItemProxy */;
+		};
+		F650FBAB2F51FF620017F6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F650FB8B2F51FF620017F6C5 /* MetronomeWatch Watch App */;
+			targetProxy = F650FBAA2F51FF620017F6C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F650FB7D2F51FF370017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F650FB7E2F51FF370017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F650FB802F51FF370017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F650FB812F51FF370017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F650FB832F51FF370017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetronomeAppHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetronomeAppHost";
+			};
+			name = Debug;
+		};
+		F650FB842F51FF370017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetronomeAppHost.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetronomeAppHost";
+			};
+			name = Release;
+		};
+		F650FB862F51FF370017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetronomeAppHost;
+			};
+			name = Debug;
+		};
+		F650FB872F51FF370017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetronomeAppHost;
+			};
+			name = Release;
+		};
+		F650FBAE2F51FF620017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MetronomeWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = edu.enorris.MetronomeAppHost;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHost.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		F650FBAF2F51FF620017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MetronomeWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = edu.enorris.MetronomeAppHost;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.enorris.MetronomeAppHost.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		F650FBB22F51FF620017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.enorris.MetronomeWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetronomeWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetronomeWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		F650FBB32F51FF620017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.enorris.MetronomeWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetronomeWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetronomeWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		F650FBB52F51FF620017F6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.enorris.MetronomeWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MetronomeWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		F650FBB62F51FF620017F6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.enorris.MetronomeWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MetronomeWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F650FB592F51FF360017F6C5 /* Build configuration list for PBXProject "MetronomeAppHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FB7D2F51FF370017F6C5 /* Debug */,
+				F650FB7E2F51FF370017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F650FB7F2F51FF370017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeAppHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FB802F51FF370017F6C5 /* Debug */,
+				F650FB812F51FF370017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F650FB822F51FF370017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeAppHostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FB832F51FF370017F6C5 /* Debug */,
+				F650FB842F51FF370017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F650FB852F51FF370017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeAppHostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FB862F51FF370017F6C5 /* Debug */,
+				F650FB872F51FF370017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F650FBAD2F51FF620017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FBAE2F51FF620017F6C5 /* Debug */,
+				F650FBAF2F51FF620017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F650FBB12F51FF620017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FBB22F51FF620017F6C5 /* Debug */,
+				F650FBB32F51FF620017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F650FBB42F51FF620017F6C5 /* Build configuration list for PBXNativeTarget "MetronomeWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F650FBB52F51FF620017F6C5 /* Debug */,
+				F650FBB62F51FF620017F6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		F650FBB72F51FFA30017F6C5 /* XCLocalSwiftPackageReference "../../metronome-app" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../metronome-app";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F650FBB82F51FFA30017F6C5 /* MetronomeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MetronomeCore;
+		};
+		F650FC0A2F52035F0017F6C5 /* MetronomeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F650FBB72F51FFA30017F6C5 /* XCLocalSwiftPackageReference "../../metronome-app" */;
+			productName = MetronomeCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F650FB562F51FF360017F6C5 /* Project object */;
+}
